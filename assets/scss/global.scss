@@ -1,0 +1,29 @@
+@import "./_var.scss";
+
+.WRAP_MIDDLE {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow-x: hidden;
+}
+
+
+.SubpageBanner{
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* START -------------------- 响应式布局样式： 小屏幕 -------------------- */
+@media screen and (max-width: 992px) {
+  .SubpageBanner{
+    height: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .SubpageBanner{
+    height: 100px;
+  }
+}
