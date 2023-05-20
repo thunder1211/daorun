@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   app: {
     baseURL: '/daorun',
+    buildAssetsDir: "/assets/",
     head: {
       meta: [
         // <meta name="viewport" content="width=device-width, initial-scale=1">
