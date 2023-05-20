@@ -48,12 +48,15 @@
 <script setup lang="ts">
 import img_aboutBanner01 from '@/assets/images/pics/about-banner01.jpg'
 import { ref } from 'vue'
+const config = useRuntimeConfig()
+console.log('config:', config)
+const {app = {baseURL: '/'}} = config
 
 let dataList: any = [
-  {id: 1, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/resource-pic01.jpg'},
-  {id: 2, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/resource-pic02.jpg'},
-  {id: 3, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/resource-pic03.jpg'},
-  {id: 4, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/resource-pic04.jpg'},
+  {id: 1, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/resource-pic01.jpg`},
+  {id: 2, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/resource-pic02.jpg`},
+  {id: 3, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/resource-pic03.jpg`},
+  {id: 4, title: '第二届 属灵领袖传承之旅', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/resource-pic04.jpg`},
 ]
 let dataList2 = [
   {id: 1, title: '五十年巨变后的华文教会'},

@@ -45,6 +45,10 @@
 </template>
 
 <script setup lang="ts">
+const config = useRuntimeConfig()
+console.log('config:', config)
+const {app = {baseURL: '/'}} = config
+
 const dataArticle = {
   title: '新加坡华文福音事工的再思：谁是我们的邻舍？',
   source: '道渊学社',
@@ -58,10 +62,10 @@ const dataArticle = {
 }
 
 let dataMore = [
-  {id: 1, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/moreArticle-01.jpg'},
-  {id: 2, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/moreArticle-02.jpg'},
-  {id: 3, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/moreArticle-03.jpg'},
-  {id: 4, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: '/images/moreArticle-04.jpg'},
+  {id: 1, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/moreArticle-01.jpg`},
+  {id: 2, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/moreArticle-02.jpg`},
+  {id: 3, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/moreArticle-03.jpg`},
+  {id: 4, title: '成了肉身的“道”与语言文字的“道”', source: '道渊学社', author: '管理员', time: '2023年4月12日', img: `${app.baseURL}/images/moreArticle-04.jpg`},
 ]
 
 

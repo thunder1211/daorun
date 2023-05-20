@@ -3,19 +3,19 @@
     <div class="homeSlide">
       <a-carousel autoplay>
         <div class="slideItem">
-          <div class="slideText" style="background-image: url(/images/home-banner01.jpg);">
+          <div class="slideText" :style="`background-image: url(${app.baseURL}/images/home-banner01.jpg);`">
             <h3>百川汇流  资源互享</h3>
             <p>世界华人基督教联盟是世界福音联盟辖下的第一个世界性华人事工平台，<br/>以百川汇流的概念，与全球华人信徒共同连结，资源互享，建立神国事工。</p>
           </div>
         </div>
         <div class="slideItem">
-          <div class="slideText" style="background-image: url(/images/home-banner02.jpg);">
+          <div class="slideText" :style="`background-image: url(${app.baseURL}/images/home-banner02.jpg);`">
             <h3>百川汇流  资源互享</h3>
             <p>世界华人基督教联盟是世界福音联盟辖下的第一个世界性华人事工平台，<br/>以百川汇流的概念，与全球华人信徒共同连结，资源互享，建立神国事工。</p>
           </div>
         </div>
         <div class="slideItem">
-          <div class="slideText" style="background-image: url(/images/home-banner03.jpg);">
+          <div class="slideText" :style="`background-image: url(${app.baseURL}/images/home-banner03.jpg);`">
             <h3>百川汇流  资源互享</h3>
             <p>世界华人基督教联盟是世界福音联盟辖下的第一个世界性华人事工平台，<br/>以百川汇流的概念，与全球华人信徒共同连结，资源互享，建立神国事工。</p>
           </div>
@@ -195,6 +195,9 @@
 
 <script setup lang="ts">
 import img_picWho01 from '@/assets/images/pics/pic-who01.jpg'
+const config = useRuntimeConfig()
+console.log('config:', config)
+const {app = {baseURL: '/'}} = config
 </script>
 
 <style lang="scss" scoped>
