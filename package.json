@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@types/node": "^18",
+    "gh-pages": "^5.0.0",
     "nuxt": "^3.4.3",
     "push-dir": "^0.4.1",
     "sass": "^1.62.1"
