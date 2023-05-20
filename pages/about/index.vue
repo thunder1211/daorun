@@ -1,10 +1,10 @@
 <template>
-  <div class="SubpageBanner" style="background-image: url(/images/about-banner01.jpg);"></div>
+  <div class="SubpageBanner" :style="`background-image: url(${img_aboutBanner01});`"></div>
   <div class="WRAP_MIDDLE">
     <div class="aboutS1">
       <a-row justify-content :gutter="{lg:48, md:48, xs:48}" class="secIn">
         <a-col :lg="11" :md="11" :xs="24" class="imgArea">
-          <img src="../../public/images/about-pic01.jpg" />
+          <img :src="img_aboutPic01" />
         </a-col>
         <a-col :lg="13" :md="13" :xs="24" class="txtsArea">
           <h2>道渊学社简介</h2>
@@ -49,7 +49,7 @@
             <h3>使命宣言</h3>
           </div>
           <div class="imgArea">
-            <img src="../../public/images/about-picA-01.jpg" />
+            <img :src="img_aboutPicA01" />
           </div>
           <div class="txts">
             <p>以履行基督大使命为目标，服务全世界为中心，以全球基督教华人、教会、机构等为导向，建立一个国际性的咨询及执行事工平台。</p>
@@ -61,7 +61,7 @@
             <h3>使命宣言</h3>
           </div>
           <div class="imgArea">
-            <img src="../../public/images/about-picA-02.jpg" />
+            <img :src="img_aboutPicA02" />
           </div>
           <div class="txts">
             <p>期望可以提供最大限度的一站式服务，借由最专业的水准，连结全球华人基督徒，进行资源整合。将不同来源、层次、结构、内容的资源进行激活与有效融合，使其具有较强的系统性、传递性和价值性，并开发出新资源、开拓出新疆界。</p>
@@ -92,7 +92,7 @@
             <h3>国际性咨询与服务</h3>
           </div>
           <div class="imgArea">
-            <img src="../../public/images/about-picB-01.jpg" />
+            <img :src="img_aboutPicB01" />
           </div>
           <div class="txts">
             <p>道渊学社作为领先的、国际性的服务机构，如同全球性咨询公司，致力于帮助世界各地华人基督徒群体、以使命为导向的教会、机构等。除了提供一流的资源，还向世界提供国际性的咨询与服务。</p>
@@ -104,7 +104,7 @@
             <h3>秘书处与服务器</h3>
           </div>
           <div class="imgArea">
-            <img src="../../public/images/about-picB-02.jpg" />
+            <img :src="img_aboutPicB02" />
           </div>
           <div class="txts">
             <p>道渊学社作为世界华人基督教联盟秘书处和服务器，负责处理其主要委任的各项日常工作及整体的运营和行政工作，任务是向世界华人基督教联盟成员提供高质高效的服务。</p>
@@ -116,6 +116,15 @@
 </template>
 
 <script setup lang="ts">
+import img_aboutBanner01 from '@/assets/images/pics/about-banner01.jpg'
+import img_aboutPic01 from '@/assets/images/pics/about-pic01.jpg'
+
+import img_aboutPicA01 from '@/assets/images/pics/about-picA-01.jpg'
+import img_aboutPicA02 from '@/assets/images/pics/about-picA-02.jpg'
+import img_aboutPicB01 from '@/assets/images/pics/about-picB-01.jpg'
+import img_aboutPicB02 from '@/assets/images/pics/about-picB-02.jpg'
+
+// console.log('img_aboutBanner01:', img_aboutBanner01)
 </script>
 
 <style lang="scss" scoped>

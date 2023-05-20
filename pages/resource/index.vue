@@ -1,5 +1,5 @@
 <template>
-  <div class="SubpageBanner" style="background-image: url(/images/whatwedo-banner01.jpg);"></div>
+  <div class="SubpageBanner" :style="`background-image: url(${img_aboutBanner01});`"></div>
   <div class="WRAP_MIDDLE">
     <!-- <pre>{{ data }}</pre> -->
     <!-- <pre>{{ dataList }}</pre> -->
@@ -46,6 +46,7 @@
 </template>
 
 <script setup lang="ts">
+import img_aboutBanner01 from '@/assets/images/pics/about-banner01.jpg'
 import { ref } from 'vue'
 
 let dataList: any = [

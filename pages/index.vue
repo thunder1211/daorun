@@ -34,7 +34,7 @@
           <NuxtLink to="/about" class="moreBtn">了解更多</NuxtLink>
         </a-col>
         <a-col :lg="10" :md="11" :xs="24" class="secR">
-          <img src="../public/images/pic-who01.jpg" />
+          <img :src="img_picWho01" />
         </a-col>
       </a-row>
     </div>
@@ -192,6 +192,10 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import img_picWho01 from '@/assets/images/pics/pic-who01.jpg'
+</script>
 
 <style lang="scss" scoped>
 .homePage{

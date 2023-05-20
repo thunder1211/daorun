@@ -1,8 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // runtimeConfig: {
+  //   public: {
+  //      baseURL: '/assets' // Exposed to the frontend as well.
+  //   }
+  // },
   app: {
     baseURL: '/daorun',
-    buildAssetsDir: "/assets/",
+    buildAssetsDir: "/static/",
     head: {
       meta: [
         // <meta name="viewport" content="width=device-width, initial-scale=1">

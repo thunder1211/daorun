@@ -1,5 +1,5 @@
 <template>
-  <div class="SubpageBanner" style="background-image: url(/images/contacts-banner01.jpg);"></div>
+  <div class="SubpageBanner" :style="`background-image: url(${img_contactsBanner01});`"></div>
   <div class="WRAP_MIDDLE sec01">
     <h2>约束声明</h2>
     <dl>
@@ -44,6 +44,7 @@
 </template>
 
 <script setup lang="ts">
+import img_contactsBanner01 from '@/assets/images/pics/contacts-banner01.jpg'
 </script>
 
 <style lang="scss" scoped>

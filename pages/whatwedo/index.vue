@@ -1,5 +1,5 @@
 <template>
-  <div class="SubpageBanner" style="background-image: url(/images/whatwedo-banner01.jpg);"></div>
+  <div class="SubpageBanner" :style="`background-image: url(${img_whatwedoBanner01});`"></div>
   <div class="WRAP_MIDDLE">
     <div class="titleArea">
       <h2>我们的目标</h2>
@@ -11,7 +11,7 @@
     <div class="ourGoal3s">
       <a-row justify-content :gutter="{lg:24, md:24, xs:24}">
         <a-col :lg="8" :md="8" :xs="24">
-          <div class="goalBox" style="background-image:url(/images/whatwedo-bgA-01.jpg);">
+          <div class="goalBox goalBoxA1">
             <div class="tit">
               <img class="iconImg" src="../../assets/images/icon-mic.png" />
               <span>线上</span>
@@ -20,7 +20,7 @@
           </div>
         </a-col>
         <a-col :lg="8" :md="8" :xs="24">
-          <div class="goalBox" style="background-image:url(/images/whatwedo-bgA-02.jpg);">
+          <div class="goalBox goalBoxA2">
             <div class="tit">
               <img class="iconImg" src="../../assets/images/icon-user-white.png" />
               <span>线下</span>
@@ -29,7 +29,7 @@
           </div>
         </a-col>
         <a-col :lg="8" :md="8" :xs="24">
-          <div class="goalBox" style="background-image:url(/images/whatwedo-bgA-03.jpg);">
+          <div class="goalBox goalBoxA3">
             <div class="tit">
               <img class="iconImg" src="../../assets/images/icon-discover.png" />
               <span>综合</span>
@@ -138,7 +138,7 @@
     <div class="ourGoal3s ourGoal4s">
       <a-row justify-content :gutter="[24,0]">
         <a-col :lg="12" :md="12" :xs="24">
-          <div class="goalBox" style="background-image:url(/images/whatwedo-bgB-01.jpg);">
+          <div class="goalBox goalBoxB1">
             <div class="tit">
               <img class="iconImg" src="../../assets/images/icon-global-white.png" />
               <span>服务全世界</span>
@@ -147,7 +147,7 @@
           </div>
         </a-col>
         <a-col :lg="12" :md="12" :xs="24">
-          <div class="goalBox" style="background-image:url(/images/whatwedo-bgB-02.jpg);">
+          <div class="goalBox goalBoxB2">
             <div class="tit">
               <img class="iconImg" src="../../assets/images/icon-foot.png" />
               <span>传承且落地</span>
@@ -156,7 +156,7 @@
           </div>
         </a-col>
         <a-col :lg="12" :md="12" :xs="24">
-          <div class="goalBox" style="background-image:url(/images/whatwedo-bgB-03.jpg);">
+          <div class="goalBox goalBoxB3">
             <div class="tit">
               <img class="iconImg" src="../../assets/images/icon-star.png" />
               <span>发挥影响力</span>
@@ -165,7 +165,7 @@
           </div>
         </a-col>
         <a-col :lg="12" :md="12" :xs="24">
-          <div class="goalBox" style="background-image:url(/images/whatwedo-bgB-04.jpg);">
+          <div class="goalBox goalBoxB4">
             <div class="tit">
               <img class="iconImg" src="../../assets/images/icon-laba.png" />
               <span>完成大使命</span>
@@ -179,6 +179,16 @@
 </template>
 
 <script setup lang="ts">
+import img_whatwedoBanner01 from '@/assets/images/pics/whatwedo-banner01.jpg'
+
+// import img_whatwedo_bgA01 from '@/assets/images/pics/whatwedo-bgA-01.jpg'
+// import img_whatwedo_bgA01 from '@/assets/images/pics/whatwedo-bgA-02.jpg'
+// import img_whatwedo_bgA01 from '@/assets/images/pics/whatwedo-bgA-03.jpg'
+
+// import img_whatwedo_bgB01 from '@/assets/images/pics/whatwedo-bgB-01.jpg'
+// import img_whatwedo_bgB01 from '@/assets/images/pics/whatwedo-bgB-02.jpg'
+// import img_whatwedo_bgB01 from '@/assets/images/pics/whatwedo-bgB-03.jpg'
+// import img_whatwedo_bgB01 from '@/assets/images/pics/whatwedo-bgB-04.jpg'
 </script>
 
 <style lang="scss" scoped>
@@ -223,6 +233,27 @@
     background-size: cover;
     font-size: 18px;
     color: #fff;
+    &.goalBoxA1{
+      background-image: url(../../assets/images/pics/whatwedo-bgA-01.jpg);
+    }
+    &.goalBoxA2{
+      background-image: url(../../assets/images/pics/whatwedo-bgA-02.jpg);
+    }
+    &.goalBoxA3{
+      background-image: url(../../assets/images/pics/whatwedo-bgA-03.jpg);
+    }
+    &.goalBoxB1{
+      background-image: url(../../assets/images/pics/whatwedo-bgB-01.jpg);
+    }
+    &.goalBoxB2{
+      background-image: url(../../assets/images/pics/whatwedo-bgB-02.jpg);
+    }
+    &.goalBoxB3{
+      background-image: url(../../assets/images/pics/whatwedo-bgB-03.jpg);
+    }
+    &.goalBoxB4{
+      background-image: url(../../assets/images/pics/whatwedo-bgB-04.jpg);
+    }
     .tit{
       display: flex;
       flex-direction: row;
