@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const _baseURL = '/daorun/'
+
 export default defineNuxtConfig({
   // runtimeConfig: {
   //   public: {
@@ -6,7 +9,7 @@ export default defineNuxtConfig({
   //   }
   // },
   app: {
-    baseURL: '/daorun',
+    baseURL: _baseURL,
     // buildAssetsDir: "/static/",
     head: {
       meta: [
@@ -16,7 +19,7 @@ export default defineNuxtConfig({
       ],
       script: [],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' }
+        { rel: 'icon', type: 'image/x-icon', href: `${_baseURL}favicon.png` }
       ],
       style: [],
       noscript: []

@@ -228,7 +228,7 @@ $headHeight: 124px;
       box-sizing: border-box;
       overflow: auto;
       backdrop-filter: blur(5px);
-      .router-link-active[data-v-b8f4954e]::after{
+      .router-link-active::after{
         display: none;
       }
       .navItem{
