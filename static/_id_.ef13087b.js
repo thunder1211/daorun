@@ -1,1 +1,0 @@
-import{a as t,l as a,o as n,b as c,e as s,t as r,u as l}from"./entry.4e816370.js";const _={class:"WRAP_MIDDLE"},i=s("h1",null,"活动详情",-1),f=t({__name:"[id]",setup(u){const e=a();console.log(e.params.id);const o=e.params.id;return(d,p)=>(n(),c("div",_,[i,s("h2",null,r(l(o)),1)]))}});export{f as default};
