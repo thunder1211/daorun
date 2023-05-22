@@ -186,7 +186,7 @@ const id = route.params.id
         .txtSide{
           h3{
             margin-top: 0;
-            font-size: 14px;
+            font-size: 16px;
           }
           .infos{
             font-size: 12px;

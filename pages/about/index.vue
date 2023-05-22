@@ -238,10 +238,13 @@ import img_aboutPicB02 from '@/assets/images/pics/about-picB-02.jpg'
       }
       .txts{
         p{
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
+  }
+  .aboutS3 .head{
+    font-size: 18px;
   }
 }
 
@@ -262,14 +265,14 @@ import img_aboutPicB02 from '@/assets/images/pics/about-picB-02.jpg'
       }
       h3{
         margin-bottom: 1em;
-        font-size: 18px;
+        font-size: 16px;
       }
       p{
         margin-bottom: 1em;
-        font-size: 18px;
+        font-size: 16px;
       }
       .note{
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
