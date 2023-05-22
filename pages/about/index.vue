@@ -140,12 +140,13 @@ import img_aboutPicB02 from '@/assets/images/pics/about-picB-02.jpg'
   .txtsArea{
     h2{
       margin-top: 0.5em;
-      font-size: 40px;
+      font-size: 38px;
     }
     .txts{
       p{
         margin-bottom: 2em;
-        font-size: 22px;
+        line-height: 1.8em;
+        font-size: 20px;
         color: $textColor;
         &:last-child{
           margin-bottom: 0;
@@ -158,7 +159,7 @@ import img_aboutPicB02 from '@/assets/images/pics/about-picB-02.jpg'
   padding: 30px 0;
   background-color: #f3f3f3;
   h2{
-    font-size: 40px;
+    font-size: 38px;
     line-height: 2em;
     text-align: center;
   }
@@ -167,9 +168,13 @@ import img_aboutPicB02 from '@/assets/images/pics/about-picB-02.jpg'
     font-size: 22px;
     color: $textColor;
   }
+  .txts{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
   p{
       margin-bottom: 2em;
-      font-size: 22px;
+      font-size: 20px;
       color: $textColor;
   }
   .firstCol{
